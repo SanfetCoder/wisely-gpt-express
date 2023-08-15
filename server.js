@@ -13,7 +13,7 @@ const openai = new OpenAIApi(configuration);
 // Allow Cross Origin Resourse Sharing - CORS
 // Use the cors middleware with specific configuration
 app.use(cors({
-  origin: 'http://localhost:5173' // Change this to match your React app's origin
+  origin: 'https://preeminent-horse-2fb2b3.netlify.app/' // Change this to match your React app's origin
 }));
 
 app.route("/:question")
